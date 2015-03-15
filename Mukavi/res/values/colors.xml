@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    <color name="grey">#6E6E6E</color>
+    <color name="transparent">#00000000</color>
+    <color name="sliding_menu_bg">#BF666666</color>
+    <!-- <color name="list_selector">#EA1E63</color> -->
+    <color name="list_selector">#00000000</color>
+    <color name="pink">#DB1B5C</color>
+    
+    <color name="color_actionbar">#F35F05</color>
+    <color name="color_login_button">#F35F05</color>
+    <color name="color_register_button">#ED1D24</color>
+     
+    <color name="slide_menu_text_color">#F35F05</color>
+    <color name="slide_menu_selected_text_color">#DC668E</color>
+    
+    
+</resources>

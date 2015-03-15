@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"><layer-list>
+
+            <!-- SHADOW -->
+            <item><shape>
+                    <solid android:color="#102746" />
+
+                    <corners android:radius="5dp" />
+                </shape></item>
+            <!-- BUTTON -->
+            <item android:bottom="5px"><shape>
+                    <padding android:bottom="5dp" />
+
+                    <gradient android:angle="270" android:endColor="#163969" android:startColor="#1c4985" />
+
+                    <corners android:radius="5dp" />
+                </shape></item>
+        </layer-list></item>
+    <item android:state_pressed="false"><shape android:shape="rectangle">
+            <corners android:radius="3dp" />
+
+            <gradient android:angle="45" android:centerColor="@color/color_login_button" android:endColor="@color/color_login_button" android:startColor="@color/color_login_button" android:type="linear" />
+
+            <padding android:bottom="0dp" android:left="0dp" android:right="0dp" android:top="0dp" />
+        </shape></item>
+
+</selector>

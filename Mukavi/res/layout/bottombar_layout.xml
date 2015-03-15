@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp" 
+     android:gravity="center_horizontal" >
+
+
+        <ImageButton
+            android:id="@+id/btnBottomLyric"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            
+            android:background="@drawable/icon_lyric" />
+
+        <ImageButton
+            android:id="@+id/btnBottomKaraoke"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_toRightOf="@+id/btnBottomLyric"
+            android:background="@drawable/karaoke" />
+
+        <ImageButton
+            android:id="@+id/btnBottomMusic"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_toRightOf="@+id/btnBottomKaraoke"
+            android:background="@drawable/icon_music" />
+
+        <ImageButton
+            android:id="@+id/btnBottomVideo"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/btnBottomMusic"
+            android:background="@drawable/icon_video" />
+
+       <ImageButton
+           android:id="@+id/btnBottomHome"
+           android:layout_width="50dp"
+           android:layout_height="match_parent"
+           android:layout_margin="4dp"
+           android:layout_toRightOf="@+id/btnBottomVideo"
+           android:background="@drawable/home" />
+
+</RelativeLayout>

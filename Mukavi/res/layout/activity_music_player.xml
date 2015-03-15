@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomBarMain"
+        android:background="@android:color/darker_gray"
+        android:orientation="vertical" >
+
+        <!-- Player Header -->
+
+        <LinearLayout
+            android:id="@+id/player_header_bg"
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:background="@layout/bg_player_header"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" >
+
+            <!-- Song Title -->
+
+            <TextView
+                android:id="@+id/songTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:text="The Good, The Bad And The Ugly"
+                android:textColor="#04b3d2"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/player_footer_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:background="@layout/bg_player_footer"
+            android:gravity="center" >
+
+            <!-- Player Buttons -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@layout/rounded_corner"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp" >
+
+                <!-- Play Button -->
+
+                <ImageButton
+                    android:id="@+id/btnPlay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:src="@drawable/btn_play" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Song Thumbnail Image -->
+
+        <LinearLayout
+            android:id="@+id/lyric_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#4a4a4a"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.mukavi.app.ui.BottomBar
+        android:id="@+id/bottomBarMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center" >
+    </com.mukavi.app.ui.BottomBar>
+
+</RelativeLayout>
